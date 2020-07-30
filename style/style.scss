@@ -370,7 +370,7 @@ body {
                         padding-bottom: 15px;
                         flex-wrap: wrap;
                     }
-                    input[type="radio"] {
+                    input[type="checkbox"] {
                         display: none;
                         &:checked + label span {
                             border: 1px solid #DA0000;
@@ -419,6 +419,7 @@ body {
                     .detail-answer {
                         width: 100%;
                         padding-top: 10px;
+                        display: none;
                         input {
                             width: 100%;
                             max-width: 295px;
