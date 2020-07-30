@@ -147,10 +147,14 @@ body {
             .question-wrapper {
                 h5 {
                     font-family: $fontFamily;
-                    font-weight: normal;
+                    font-weight: 600;
                     font-size: 22px;
                     line-height: 25px;
                     color: #483D3D;
+                    span {
+                        display: block;
+                        padding-bottom: 5px;
+                    }
                 }
                 .range-question-wrapper {
                     padding-top: 35px;
@@ -476,6 +480,9 @@ body {
     }
 }
 @media screen and (max-width: 900px) {
+    body .page-container .main .second-question {
+        padding-top: 25px;
+    }
     body .page-container .main .question-wrapper .range-question-wrapper .anser-wrp.anser-raio-0-10-wrp label .digit {
         width: 45px;
         height: 45px;

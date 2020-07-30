@@ -44,10 +44,8 @@ form.addEventListener('submit', function (e) {
 
             if (document.querySelectorAll('[name=' + name + ']:checked').length === 0 ) {
 
-
                 var digs;
-
-                if($('.first-question input').is(':checked') && $('.second-question input[type="checkbox"]:checked').length == 0){
+                if($('.first-question input').is(':checked') && $('.second-question input[type="checkbox"]:checked').length == 0 && $('.first-question input:checked').val() < 7){
                     digs = $(elCheck[i]).parents('.input-radio-group').find('.error-text');
                     erroreArrayElemnts.push(elCheck[i]);
                 }
@@ -60,7 +58,7 @@ form.addEventListener('submit', function (e) {
                 for (var e = 0; e < 10; e++) {
                     if(document.querySelectorAll('[name=' + name + ']')[e]){
                         document.querySelectorAll('[name=' + name + ']')[e].addEventListener('change', (e) => {
-                            if($(e.target).parents('.input-radio-group').length > 0 && $('.first-question input').is(':checked')) {
+                            if($(e.target).parents('.input-radio-group').length > 0 && $('.first-question input').is(':checked') && $('.first-question input:checked').val() < 7) {
                                 $(e.target).parents('.input-radio-group').find('.error-text').fadeOut(300);
                             }
                         });
@@ -77,8 +75,11 @@ form.addEventListener('submit', function (e) {
     }
 });
 $('.first-question input').change(function(e){
-    if($(this).is(':checked')) {
+    if($(this).is(':checked') && $(this).val()<7) {
         $('.second-question').fadeIn(300);
+    }
+    else {
+        $('.second-question').fadeOut(300);
     }
 });
 $('.check-answer').change(function(e){

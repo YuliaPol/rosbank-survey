@@ -163,10 +163,15 @@ body .page-container .main .error-text {
 
 body .page-container .main .question-wrapper h5 {
   font-family: Arial;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 22px;
   line-height: 25px;
   color: #483D3D;
+}
+
+body .page-container .main .question-wrapper h5 span {
+  display: block;
+  padding-bottom: 5px;
 }
 
 body .page-container .main .question-wrapper .range-question-wrapper {
@@ -636,6 +641,9 @@ body .page-container .main .submit-wrapper .btn-submit {
 }
 
 @media screen and (max-width: 900px) {
+  body .page-container .main .second-question {
+    padding-top: 25px;
+  }
   body .page-container .main .question-wrapper .range-question-wrapper .anser-wrp.anser-raio-0-10-wrp label .digit {
     width: 45px;
     height: 45px;
