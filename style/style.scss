@@ -1,0 +1,623 @@
+$fontFamily: Arial;
+$red1: #e91f2d;
+$red2: #FC0000;
+
+$color0:#BA1417;
+$color1:#CD0800;
+$color2:#F40200;
+$color3:#FF4A05;
+$color4:#FF7500;
+$color5:#FFA400;
+$color6:#E7F600;
+$color7:#00E355;
+$color8:#00D086;
+$color9:#00AB23;
+$color10:#008811;
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+
+body {
+    line-height: 1; }
+
+ol, ul {
+    list-style: none; }
+
+blockquote, q {
+    quotes: none; }
+
+blockquote {
+&:before, &:after {
+    content: '';
+    content: none; } }
+
+q {
+&:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+* {
+    box-sizing: border-box;
+}
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: $fontFamily;
+    .page-container {
+        max-width: 1150px;
+        margin: auto;
+        .header {
+            width: 100%;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            &.last-page {
+                .text {
+                    padding-top: 90px;
+                    padding-bottom: 200px;
+                }
+                .picture {
+                    background-image: url(../img/picture-2.png);
+                }
+            }
+            .text {
+                background-color: $red1;
+                width: 50%;
+                padding-top: 45px;
+                padding-bottom: 130px;
+                padding-left: 90px;
+                padding-right: 25px;
+                h2 {
+                    font-family: $fontFamily;
+                    font-weight: bold;
+                    font-size: 25px;
+                    line-height: 35px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    padding-bottom: 10px;
+                }
+                .underline {
+                    text-align: right;
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        height: 4px;
+                        background: #FFFFFF;
+                        width: 80%;
+                    }
+                }
+                .bottom-text {
+                    padding-top: 10px;
+                    font-family: $fontFamily;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 35px;
+                    color: #FFFFFF;
+
+                }
+            }
+            .picture {
+                width: 50%;
+                background-image: url(../img/picture-1.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+                .logo {
+                    position: absolute;
+                    width: 187px;
+                    max-width: 100%;
+                    height: auto;
+                    top: 23px;
+                    right: 25%;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .main {
+            padding-left: 90px;
+            padding-right: 90px;
+            padding-top: 45px;
+            padding-bottom: 75px;
+            .error-text {
+                display: none;
+                text-align: right;
+                font-size: 21px;
+                color: $red2;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .question-wrapper {
+                h5 {
+                    font-family: $fontFamily;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 25px;
+                    color: #483D3D;
+                }
+                .range-question-wrapper {
+                    padding-top: 35px;
+                    .anser-wrp {
+                        padding-top: 20px;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        padding-bottom: 10px;
+                        .two-answers-wrapp{
+                          padding-left: 30px;
+                          font-size: 21px;
+                          .answer-subtitle{
+                             padding-top: 10px;
+                          }
+                          .answer-text{
+                            padding: 0px;
+                          }
+                         .erorore-txt::placeholder{
+                            color: #e60028;
+                         }
+                        }
+                      }
+                      .anser-wrp.anser-radio-wrp {
+            
+                        .label-wrp {
+            
+                          input.inp-radio.inp-radio-red {
+                            /*display: none;*/
+                            opacity: 0;
+                            margin: 0;
+                            max-width: 0px;
+                            min-width: 0px;
+                            max-height: 0px;
+                            min-height: 0px;
+                          }
+                          label {
+            
+                            .red-round {
+                              display: inline-block;
+                              width: 16px;
+                              height: 16px;
+                              border-radius: 50%;
+                              position: relative;
+                            }
+                            .radio-text {
+                              font-size: 23px;
+                              padding-left: 20px;
+                            }
+                          }
+                          input:checked + label > .red-round:before {
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            top: 3px;
+                            left: 3px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                          }
+                        }
+                      }
+                      .anser-wrp.anser-inp-text-wrp {
+                        input[type="text"] {
+                          min-width: 80%;
+                          font-size: 19px;
+                          font-style: italic;
+                          line-height: 32px;
+                          padding-left: 20px;
+                          color: #333333;
+                          border-radius: 4px;
+                          border: 2px solid #8a8989;
+                        }
+                        input[type="text"]::placeholder {
+                          color: #d6d3d3;
+                        }
+                      }
+                      .anser-wrp.anser-select-wrp {
+            
+                        .custom-select {
+                          font-size: 18px;
+                        }
+                      }
+                      .anser-wrp.anser-raio-0-10-wrp {
+                        display: flex;
+                        justify-content: space-between;
+            
+                        input[type='radio'] {
+                          opacity: 0;
+                          display: none;
+                        }
+                        label {
+                          cursor: pointer;
+            
+                          .digit {
+                            width: 66px;
+                            min-width: 66px;
+                            height: 66px;
+                            min-height: 66px;
+                            font-family: Arial;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 28px;
+                            line-height: 66px;
+                            color: #483D3D;
+                            text-align: center;
+                            border-radius: 50%;
+                            border: 1.5px solid #ffffff;
+                            transition: background 0.5s;
+                          }
+                          .color0{
+                            border: 1.5px solid $color0;
+                          }
+                          .color1{
+                           border: 1.5px solid $color1;
+                          }
+                          .color2{
+                            border: 1.5px solid $color2;
+                          }
+                          .color3{
+                            border: 1.5px solid $color3;
+                          }
+                          .color4{
+                            border: 1.5px solid $color4;
+                          }
+                          .color5{
+                            border: 1.5px solid $color5;
+                          }
+                          .color6{
+                            border: 1.5px solid $color6;
+                          }
+                          .color7{
+                            border: 1.5px solid $color7;
+                          }
+                          .color8{
+                            border: 1.5px solid $color8;
+                          }
+                          .color9{
+                            border: 1.5px solid $color9;
+                          }
+                          .color10{
+                            border: 1.5px solid $color10;
+                          }
+                          .error{
+                            background-color: #e60028;
+                          }
+                        }
+                        input[type='radio']:checked + label {
+                          .digit {
+                            color: #ffffff;
+                            font-weight: 500;
+                          }
+                          .color0{
+                            background-color: $color0;
+                          }
+                          .color1{
+                            background-color: $color1;
+                          }
+                          .color2{
+                            background-color: $color2;
+                          }
+                          .color3{
+                            background-color: $color3;
+                          }
+                          .color4{
+                            background-color:$color4;
+                          }
+                          .color5{
+                            background-color: $color5;
+                          }
+                          .color6{
+                            background-color: $color6;
+                          }
+                          .color7{
+                            background-color: $color7;
+                          }
+                          .color8{
+                            background-color: $color8;
+                          }
+                          .color9{
+                            background-color: $color9;
+                          }
+                          .color10{
+                            background-color: $color10;
+                          }
+                        }
+                      }
+                      .point-range {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            font-family: $fontFamily;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 10px;
+                            line-height: 25px;
+                            span:first-child {
+                                color: $color0;
+                            }
+                            span:last-child {
+                                color: $color10;
+                            }
+                      }
+                }
+            }
+            .second-question {
+                padding-top: 50px;
+                display: none;
+                .error-text {
+                    text-align: left;
+                }
+                .input-radio-group {
+                    padding-top: 20px;
+                    .input-group {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        padding-bottom: 15px;
+                        flex-wrap: wrap;
+                    }
+                    input[type="radio"] {
+                        display: none;
+                        &:checked + label span {
+                            border: 1px solid #DA0000;
+                            position: relative;
+                            &::before {
+                                opacity: 1;  
+                            }
+                        }
+                    }
+                    label {
+                        font-family: $fontFamily;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #6C6565;
+                        max-width: calc(100% - 20px);
+                        span {
+                            cursor: pointer;
+                            position: relative;
+                            display: inline-block;
+                            width: 15px;
+                            height: 15px;
+                            min-width: 15px;
+                            min-height: 15px;
+                            border-radius: 50%;
+                            border: 1px solid #6C6565;
+                            margin-right: 5px;
+                            &::before {
+                                content: "";
+                                opacity: 0;
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background-color: #DA0000;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                bottom: auto;
+                                right: auto;
+                                transform: translate(-50%, -50%);
+                                transition: opacity 0.3s;
+                            }
+                        }
+                    }
+                    .detail-answer {
+                        width: 100%;
+                        padding-top: 10px;
+                        input {
+                            width: 100%;
+                            max-width: 295px;
+                            outline: none;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            border-bottom: 1px solid #000000;
+                            padding: 0px 3px;
+                            font-family: $fontFamily;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: #6C6565;
+                            &::placeholder {
+                                font-family: $fontFamily;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 10px;
+                                line-height: 25px;
+                                color: #6C6565;
+                                opacity: 0.4;
+                            }
+                        }
+                    }
+                }
+            }
+            .submit-wrapper {
+                padding-top: 50px;
+                text-align: center;
+                .btn-submit {
+                    background: $red2;
+                    border-radius: 5px;
+                    font-family: $fontFamily;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    padding: 13px 65px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    body .page-container .main .question-wrapper .range-question-wrapper .anser-wrp.anser-raio-0-10-wrp label .digit {
+        width: 50px;
+        height: 50px;
+        min-height: 50px;
+        min-width: 50px;
+        line-height: 50px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 900px) {
+    body .page-container .main .question-wrapper .range-question-wrapper .anser-wrp.anser-raio-0-10-wrp label .digit {
+        width: 45px;
+        height: 45px;
+        min-height: 45px;
+        min-width: 45px;
+        line-height: 45px;
+        font-size: 25px;
+    }
+    body .page-container .header .text {
+        padding-left: 50px;
+    }
+    body .page-container .main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    body .page-container .main .error-text {
+        font-size: 14px;
+    }
+    body .page-container .main .second-question .input-radio-group label::before {
+        margin-top: 0px;
+    }
+    body .page-container .main .second-question .input-radio-group label,
+    body .page-container .main .second-question .input-radio-group .detail-answer input {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    body .page-container .header .text {
+        width: 50%;
+        padding-top: 35px;
+        padding-bottom: 90px;
+        padding-left: 35px;
+        padding-right: 20px;
+    }
+    body .page-container .header.last-page .text {
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+    body .page-container .main {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    body .page-container .header .text h2 {
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 6px;
+    }
+    body .page-container .header .text .bottom-text {
+        font-size: 14px;
+        line-height: 22px;
+        padding-top: 6px;
+    }
+    body .page-container .header .text .underline::after {
+        height: 2px;
+    }
+    body .page-container .main .question-wrapper h5 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    body .page-container .main .question-wrapper .range-question-wrapper {
+        padding-top: 25px;
+    }
+    body .page-container .main .submit-wrapper {
+        padding-top: 35px;
+    }
+    body .page-container .header .picture .logo {
+        width: 100px;
+    }
+    body .page-container .main .question-wrapper .range-question-wrapper .anser-wrp.anser-raio-0-10-wrp label .digit {
+        width: 30px;
+        height: 30px;
+        min-height: 30px;
+        min-width: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    body .page-container .main .submit-wrapper .btn-submit {
+        padding: 13px 35px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 500px) {
+    body .page-container .header .text {
+        width: 50%;
+        padding-top: 25px;
+        padding-bottom: 50px;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    body .page-container .header.last-page .text {
+        padding-top: 35px;
+        padding-bottom: 100px;
+    }
+    body .page-container .main {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+    body .page-container .main .question-wrapper .range-question-wrapper {
+        padding-top: 0px;
+    }
+    body .page-container .header .text h2 {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 0px;
+    }
+    body .page-container .header .text .bottom-text {
+        font-size: 12px;
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 400px) {
+    body .page-container .main .question-wrapper .range-question-wrapper .anser-wrp.anser-raio-0-10-wrp label .digit {
+        width: 25px;
+        height: 25px;
+        min-height: 25px;
+        min-width: 25px;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    body .page-container .main .submit-wrapper {
+        padding-top: 15px;
+    }
+    body .page-container .main .submit-wrapper .btn-submit {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+    body .page-container .header .text {
+        padding-left: 10px;
+    }
+    body .page-container .main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 350px) {
+    body .page-container .main .question-wrapper .range-question-wrapper .anser-wrp.anser-raio-0-10-wrp label .digit {
+        width: 20px;
+        height: 20px;
+        min-height: 20px;
+        min-width: 20px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Росбанк опрос</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script src="./script/libs/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="header">
+            <div class="text">
+                <h2>
+                    Вам понравилось наше обслуживание?
+                </h2>
+                <div class="underline"></div>
+                <p class="bottom-text">
+                    Оставьте свой отзыв
+                </p>
+            </div>
+            <div class="picture">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Росбанк">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <form action="end.html" id="main-form">
+                <div class="question-wrapper first-question">
+                    <div class="anser-wrp anser-range">
+                        <div class="range-cont">
+                            <h5>
+                                Уважаемый Воланд Петрович!<br>
+                                Оцените, пожалуйста, насколько Вы удовлетворены обслуживанием в офисе г. Москва?
+                            </h5>
+                            <div class="range-question-wrapper">
+                                <div class="range-wrp">
+                                    <div class="anser-wrp anser-raio-0-10-wrp">
+                                        <input type="radio" data-reqired id="q-1-0" name="q-1-1" value="0">
+                                        <label for="q-1-0" class="btn btn-1">
+                                            <div class="digit color0">0</div>
+                                        </label>
+
+                                        <input type="radio" data-reqired id="q-1-1" name="q-1-1" value="1">
+                                        <label for="q-1-1" class="btn btn-1">
+                                            <div class="digit color1">1</div>
+                                        </label>
+
+                                        <input type="radio" id="q-1-2" name="q-1-1" value="2">
+                                        <label for="q-1-2" class="btn btn-2">
+                                            <div class="digit color2">2</div>
+                                        </label>
+
+                                        <input type="radio" id="q-1-3" name="q-1-1" value="3">
+                                        <label for="q-1-3" class="btn btn-3">
+                                            <div class="digit color3">3</div>
+                                        </label>
+
+                                        <input type="radio" id="q-1-4" name="q-1-1" value="4">
+                                        <label for="q-1-4" class="btn btn-4">
+                                            <div class="digit color4">4</div>
+                                        </label>
+
+                                        <input type="radio" id="q-1-5" name="q-1-1" value="5">
+                                        <label for="q-1-5" class="btn btn-5">
+                                            <div class="digit color5">5</div>
+                                        </label>
+                                        <input type="radio" id="q-1-6" name="q-1-1" value="6">
+                                        <label for="q-1-6" class="btn btn-5">
+                                            <div class="digit color6">6</div>
+                                        </label>
+                                        <input type="radio" id="q-1-7" name="q-1-1" value="7">
+                                        <label for="q-1-7" class="btn btn-5">
+                                            <div class="digit color7">7</div>
+                                        </label>
+                                        <input type="radio" id="q-1-8" name="q-1-1" value="8">
+                                        <label for="q-1-8" class="btn btn-5">
+                                            <div class="digit color8">8</div>
+                                        </label>
+                                        <input type="radio" id="q-1-9" name="q-1-1" value="9">
+                                        <label for="q-1-9" class="btn btn-5">
+                                            <div class="digit color9">9</div>
+                                        </label>
+                                        <input type="radio" id="q-1-10" name="q-1-1" value="10">
+                                        <label for="q-1-10" class="btn btn-5">
+                                            <div class="digit color10">10</div>
+                                        </label>
+                                    </div>
+                                    <div class="error-text">
+                                        <p>Пожалуйста, выберите ответ</p>
+                                    </div>
+                                </div>
+                                <div class="point-range">
+                                    <span>Совершенно не удовлетворен</span>
+                                    <span>Полностью удовлетворен</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper second-question">
+                    <h5>
+                        Помогите нам стать лучше. Укажите, пожалуйста, что Вам понравилось или не понравилось во взаимодействии с ПАО Росбанк
+                    </h5>
+                    <div class="input-radio-group">
+                        <div class="input-group">
+                            <input type="radio" data-reqired name="q-2" id="q-2-1">
+                            <label for="q-2-1">
+                                <span></span>
+                                Компетентность сотрудников/ корректность консультации
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <input type="radio" data-reqired name="q-2" id="q-2-2">
+                            <label for="q-2-2">
+                                <span></span>
+                                Вежливость и доброжелательность сотрудников
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <input type="radio" data-reqired name="q-2" id="q-2-3">
+                            <label for="q-2-3">
+                                <span></span>
+                                Скорость обслуживания / время ожидания
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <input type="radio" data-reqired name="q-2" id="q-2-4">
+                            <label for="q-2-4">
+                                <span></span>
+                                Удобство пребывания в офисе
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <input type="radio" data-reqired name="q-2" id="q-2-5">
+                            <label for="q-2-5">
+                                <span></span>
+                                Другое
+                            </label>
+                            <div  class="detail-answer">
+                                <input type="text" placeholder="Ведите Ваш комментарий">
+                            </div>  
+                        </div>
+                        <div class="error-text">
+                            <p>Пожалуйста, выберите ответ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-wrapper">
+                    <input class="btn-submit" type="submit" id="submitBtn" value="Отправить">
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="./script/validRadio.js"></script>
+</body>
+
+</html>
