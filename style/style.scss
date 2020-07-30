@@ -14,6 +14,9 @@ $color8:#00D086;
 $color9:#00AB23;
 $color10:#008811;
 
+@import "./../font/Montserrat/stylesheet.css";
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -467,6 +470,20 @@ body {
                 }
             }
         }
+        footer.footer {
+            margin: 40px 0;
+            background-color: #877043;
+            color: #ffffff;
+            text-align: right;
+            padding: 10px 30px 10px 10px;
+            font-size: 14px;
+            line-height: 5px;
+            font-family: 'Montserrat';
+            p {
+                margin-top: 14px;
+                margin-bottom: 14px;
+            }
+          }
     }
 }
 @media screen and (max-width: 1000px) {
@@ -569,6 +586,9 @@ body {
     }
 }
 @media screen and (max-width: 500px) {
+    body .page-container footer.footer {
+        margin: 20px 0px 10px 0px;
+    }
     body .page-container .header .text {
         width: 50%;
         padding-top: 25px;
@@ -621,6 +641,10 @@ body {
     body .page-container .main {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    body .page-container footer.footer {
+        padding: 10px 10px 10px 10px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 350px) {
