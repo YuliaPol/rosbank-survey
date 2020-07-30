@@ -30,7 +30,7 @@ form.addEventListener('submit', function (e) {
                         if($(el[i]).parents('.range-wrp').length > 0){
                             $(e.target).parents('.range-wrp').find('.error-text').fadeIn(300);
                         }
-                        else {
+                        else if($(el[i]).parents('.input-radio-group').length > 0 && $('.first-question input').is(':checked')) {
                             $(e.target).parents('.input-radio-group').find('.error-text').fadeIn(300);
                         }
                     });

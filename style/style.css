@@ -53,6 +53,7 @@ body {
 body .page-container {
   max-width: 1150px;
   margin: auto;
+  margin-top: 40px;
 }
 
 body .page-container .header {
@@ -652,6 +653,9 @@ body .page-container .main .submit-wrapper .btn-submit {
 }
 
 @media screen and (max-width: 768px) {
+  body .page-container {
+    margin-top: 0px;
+  }
   body .page-container .main .error-text {
     font-size: 14px;
   }
