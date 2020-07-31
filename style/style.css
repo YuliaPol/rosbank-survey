@@ -619,6 +619,7 @@ body .page-container .main .second-question .input-radio-group .detail-answer in
 body .page-container .main .submit-wrapper {
   padding-top: 50px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 body .page-container .main .submit-wrapper .btn-submit {
@@ -630,6 +631,15 @@ body .page-container .main .submit-wrapper .btn-submit {
   padding: 13px 65px;
   border: none;
   outline: none;
+}
+
+body .page-container .thanks-text {
+  font-size: 23.333px;
+  color: #131212;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-align: center;
 }
 
 body .page-container footer.footer {
@@ -732,6 +742,7 @@ body .page-container footer.footer p {
   }
   body .page-container .main .submit-wrapper {
     padding-top: 35px;
+    margin-bottom: 35px;
   }
   body .page-container .header .picture .logo {
     width: 100px;
@@ -751,6 +762,9 @@ body .page-container footer.footer p {
 }
 
 @media screen and (max-width: 500px) {
+  body .page-container .thanks-text {
+    font-size: 14px;
+  }
   body .page-container footer.footer {
     margin: 20px 0px 10px 0px;
   }
@@ -796,6 +810,7 @@ body .page-container footer.footer p {
   }
   body .page-container .main .submit-wrapper {
     padding-top: 15px;
+    margin-bottom: 15px;
   }
   body .page-container .main .submit-wrapper .btn-submit {
     padding: 8px 25px;

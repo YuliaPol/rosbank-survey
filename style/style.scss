@@ -458,6 +458,7 @@ body {
             .submit-wrapper {
                 padding-top: 50px;
                 text-align: center;
+                margin-bottom: 50px;
                 .btn-submit {
                     background: $red2;
                     border-radius: 5px;
@@ -469,6 +470,14 @@ body {
                     outline: none;
                 }
             }
+        }
+        .thanks-text {
+            font-size: 23.333px;
+            color: rgb(19, 18, 18);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 20px 0;
+            text-align: center;
         }
         footer.footer {
             margin: 40px 0;
@@ -568,6 +577,7 @@ body {
     }
     body .page-container .main .submit-wrapper {
         padding-top: 35px;
+        margin-bottom: 35px;
     }
     body .page-container .header .picture .logo {
         width: 100px;
@@ -586,6 +596,9 @@ body {
     }
 }
 @media screen and (max-width: 500px) {
+    body .page-container .thanks-text {
+        font-size: 14px;
+    }
     body .page-container footer.footer {
         margin: 20px 0px 10px 0px;
     }
@@ -630,6 +643,7 @@ body {
     }
     body .page-container .main .submit-wrapper {
         padding-top: 15px;
+        margin-bottom: 15px;
     }
     body .page-container .main .submit-wrapper .btn-submit {
         padding: 8px 25px;
