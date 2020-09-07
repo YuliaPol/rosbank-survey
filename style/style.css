@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url(../font/Montserrat/stylesheet.css);
-
+@import url(c:\Users\Spectra\Documents\forServise\РОСБАНКА_ОПРОС\html\font\Montserrat\stylesheet.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -631,6 +630,9 @@ body .page-container .main .submit-wrapper .btn-submit {
   padding: 13px 65px;
   border: none;
   outline: none;
+  opacity: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body .page-container .thanks-text {
@@ -656,6 +658,14 @@ body .page-container footer.footer {
 body .page-container footer.footer p {
   margin-top: 14px;
   margin-bottom: 14px;
+}
+
+body .page-container footer.footer p a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  outline: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -839,4 +849,3 @@ body .page-container footer.footer p {
     font-size: 12px;
   }
 }
-/*# sourceMappingURL=style.css.map */

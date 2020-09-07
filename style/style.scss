@@ -468,6 +468,8 @@ body {
                     padding: 13px 65px;
                     border: none;
                     outline: none;
+                    opacity: 0;
+                    box-shadow: none;
                 }
             }
         }
@@ -491,6 +493,13 @@ body {
             p {
                 margin-top: 14px;
                 margin-bottom: 14px;
+                a {
+                    color: inherit;
+                    font-size: inherit;
+                    font-weight: inherit;
+                    text-decoration: none;
+                    outline: none;
+                }
             }
           }
     }
